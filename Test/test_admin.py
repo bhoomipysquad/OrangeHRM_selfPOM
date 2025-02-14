@@ -4,7 +4,7 @@ from Test.test_login import Test_Login
 
 
 class Test_Admin(Test_Login):
-    def test_Admin(self,setup):
+    def test_admin(self,setup):
         self.driver = setup
         self.ad = Admin (self.driver)
         time.sleep(5)

@@ -2,7 +2,7 @@ import time
 from Test.conftest import baseURL
 
 
-class Test_BaseURL():
+class Test_BaseURL:
     def test_openurl(self, setup):
         self.driver = setup
         self.driver.get(baseURL)

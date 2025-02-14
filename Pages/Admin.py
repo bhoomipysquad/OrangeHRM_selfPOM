@@ -2,7 +2,7 @@ import time
 from selenium.webdriver.common.by import By
 
 
-class Admin():
+class Admin:
     def __init__(self,driver):
         self.driver = driver
 
@@ -22,13 +22,13 @@ class Admin():
     def click_job(self):
          self.driver.find_element(By.XPATH, self.job_xpath).click()
          time.sleep(2)
-         Job = {       'job_titles_xpath' : '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[1]',
+         job = {       'job_titles_xpath' : '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[1]',
                       'pay_grades_xpath' : '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[2]',
                       'employement_status_xpath' : '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[3]/a[1]',
                       'job_categories_xpath' : '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[4]',
                       'work_shift_xpath' : '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[5]'
                 }
-         for menu,xpath in Job.items():
+         for menu,xpath in job.items():
              try:
                  element = self.driver.find_element(By.XPATH,xpath)
                  element.click()

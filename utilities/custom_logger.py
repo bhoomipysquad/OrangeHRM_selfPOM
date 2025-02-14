@@ -26,7 +26,7 @@ class LogGen:
         # Configure logging to log to a file and console
         logging.basicConfig(
             filename=os.path.join(log_dir, "automation.log"),
-            level=logging.info(),  # Capture logs of level DEBUG and above
+            level=logging.info(""),  # Capture logs of level DEBUG and above
             format='%(asctime)s: %(levelname)s: %(message)s',
             datefmt='%m/%d/%Y %I:%M:%S %p'
         )

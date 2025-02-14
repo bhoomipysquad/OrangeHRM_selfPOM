@@ -20,26 +20,26 @@ class Home:
     def click_admin(self):
         self.driver.find_element(By.LINK_TEXT,self.admin_linktext).click()
 
-    def click_PIM(self):
+    def click_pim(self):
         self.driver.find_element(By.LINK_TEXT,self.PIM_linktext).click()
 
-    def click_My_info(self):
+    def click_my_info(self):
         self.driver.find_element(By.LINK_TEXT,self.My_info_linktext).click()
 
-    def click_Performance(self):
+    def click_performance(self):
         self.driver.find_element(By.LINK_TEXT,self.Performance_linktext).click()
 
-    def click_Dashboard(self):
+    def click_dashboard(self):
         self.driver.find_element(By.LINK_TEXT,self.Dashboard_linktext).click()
 
-    def click_Directory(self):
+    def click_directory(self):
         self.driver.find_element(By.LINK_TEXT,self.Directory_linktext).click()
 
-    def click_Maintenance(self):
+    def click_maintenance(self):
         self.driver.find_element(By.LINK_TEXT,self.Maintenance_linktext).click()
 
     def click_claim(self):
         self.driver.find_element(By.LINK_TEXT,self.claim_linktext).click()
 
-    def click_Buzz(self):
+    def click_buzz(self):
         self.driver.find_element(By.LINK_TEXT,self.Buzz_linktext).click()
