@@ -5,10 +5,10 @@ from Test.conftest import Base
 
 class Login(Base):
 
-    text_username_xpath = "//[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
-    text_password_xpath = "//[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
-    button_login_xpath = "//[@id='app']/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
-    dropdown_xpath = "//[@id='app']/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i"
+    text_username_xpath = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'
+    text_password_xpath = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'
+    button_login_xpath = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'
+    dropdown_xpath = '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i'
     logout_xpath = "//a[normalize-space()='Logout']"
 
 
